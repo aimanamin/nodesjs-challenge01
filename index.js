@@ -2,9 +2,16 @@ const express = require('express');
 
 const server = express();
 
+var countRequests = 0;
+
 server.listen(3000);
 
 server.use(express.json());
+
+server.use((req, res, next) => {
+  console.log("Número de requisição =", ++countRequests);
+  return next();
+});
 
 function checkIndexIsString(req, res, next){
   if (typeof req.body.id === "number"){
