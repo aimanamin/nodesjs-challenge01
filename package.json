@@ -1,0 +1,17 @@
+{
+  "name": "nodesjs-challenge01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aimanamin/nodesjs-challenge01.git",
+  "author": "Aiman Amin <aamin@gametec.com.py>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
